@@ -1,12 +1,8 @@
 from setuptools import setup, find_packages
 
-# Read the dependencies from requirements.txt
-with open('requirements.txt') as f:
-    required = f.read().splitlines()
-
 setup(
     name='football-stats-scraper',
-    version='0.1.7',
+    version='0.1.8',
     packages=find_packages(where='src'),
     package_dir={'': 'src'},
     author='John Murtagh',
@@ -15,7 +11,22 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/murtaghj/football-cli',
-    install_requires=required,
+    install_requires=[
+        'beautifulsoup4',
+        'certifi',
+        'charset-normalizer',
+        'idna',
+        'lxml',
+        'numpy',
+        'pandas',
+        'python-dateutil',
+        'pytz',
+        'requests',
+        'six',
+        'soupsieve',
+        'tzdata',
+        'urllib3'
+    ],
     entry_points={
         'console_scripts': [
             'football-cli=football_cli.__main__:entrypoint',
@@ -25,6 +36,5 @@ setup(
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
-    ],
-    package_data={'': ['requirements.txt']},
+    ]
 )
