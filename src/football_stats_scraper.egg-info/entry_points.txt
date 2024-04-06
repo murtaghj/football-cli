@@ -1,0 +1,2 @@
+[console_scripts]
+football-cli = football_cli.__main__:entrypoint

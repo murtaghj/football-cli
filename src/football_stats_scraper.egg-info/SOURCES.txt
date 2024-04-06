@@ -1,0 +1,12 @@
+README.md
+setup.py
+src/football_cli/__init__.py
+src/football_cli/__main__.py
+src/football_cli/defines.py
+src/football_cli/enums.py
+src/football_stats_scraper.egg-info/PKG-INFO
+src/football_stats_scraper.egg-info/SOURCES.txt
+src/football_stats_scraper.egg-info/dependency_links.txt
+src/football_stats_scraper.egg-info/entry_points.txt
+src/football_stats_scraper.egg-info/requires.txt
+src/football_stats_scraper.egg-info/top_level.txt
